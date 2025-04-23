@@ -35,7 +35,7 @@ a:hover {
   font-weight: 600;
   z-index: 10;
 }
-/* ❶ generic wrapper – no horizontal offset */
+
 .wrapper {
   padding: 4rem 4rem;
   height: 100vh;
@@ -45,9 +45,8 @@ a:hover {
   max-width: 100%;
 }
 
-/* ❷ only the HOME page (body.has-sidebar) gets pushed right */
 body.has-sidebar .wrapper {
-  margin-left: 340px; /* same width as the sidebar  */
+  margin-left: 340px;
   max-width: calc(100% - 340px);
 }
 
